@@ -1,0 +1,145 @@
+{
+    "name": "Diplomacy",
+    "file": "assets/diplomacy.svg",
+    "svg config": {
+        "land_layer": "layer30",
+        "island_ring_layer": "layer27",
+        "island_fill_layer": "layer26",
+        "island_borders": "layer32",
+        "sea_borders": "layer31",
+        "province_names": "layer22",
+        "supply_center_icons": "layer23",
+        "season": "layer1",
+        "power_banners": "layer3",
+        "starting_units": "layer20",
+        "unit_output": "layer15",
+        "arrow_output": "layer14",
+        "coast_markers": "layer21",
+        "impassibles_layer": "layer29",
+        "background": "layer4",
+        "sidebar": "layer11",
+        "army": "layer19",
+        "retreat_army": "g474",
+        "fleet": "layer17",
+        "retreat_fleet": "g248",
+        "detect_starting_units": true,
+        "unit_type_labeled": false,
+        "unit_labels": true,
+        "province_labels": true,
+        "center_labels": true,
+        "unowned_color": "c6b7ab",
+        "border_margin_hint": 1,
+        "map_width": 1324.8186,
+        "unit_radius": 13,
+        "order_stroke_width": 2,
+        "neutral": "c6b7ab",
+        "neutral_sc": "ffffff",
+        "unknown": "808080",
+        "loc_x_offset": 7.7655,
+        "loc_y_offset": 7.033,
+        "delete_layer": [
+            "army",
+            "retreat_army",
+            "fleet",
+            "retreat_fleet"
+        ],
+        "coring": false,
+        "fow": false
+    },
+    "overrides": {
+        "provinces": {
+            "Albania": {
+                "remove_adjacencies": [
+                    "Apulia"
+                ]
+            },
+            "Bulgaria": {
+                "coasts": {
+                    "ec": [
+                        "Black Sea",
+                        "Rumania"
+                    ],
+                    "sc": [
+                        "Aegean Sea",
+                        "Greece"
+                    ]
+                }
+            },
+            "Spain": {
+                "coasts": {
+                    "nc": [
+                        "Gascony",
+                        "Portugal",
+                        "Mid-Atlantic Ocean"
+                    ],
+                    "sc": [
+                        "Gulf of Lyon",
+                        "Marseilles",
+                        "Western Mediterranean",
+                        "Portugal",
+                        "Mid-Atlantic Ocean"
+                    ]
+                }
+            },
+            "Mid-Atlantic Ocean": {
+                "adjacencies": ["Western Mediterranean"]
+            },
+            "Western Mediterranean": {
+                "adjacencies": ["Mid-Atlantic Ocean"]
+            },
+            "Portugal": {
+                "adjacencies": ["Spain"]
+            },
+            "St Petersburg": {
+                "coasts": {
+                    "nc": [
+                        "Barents Sea",
+                        "Norway"
+                    ],
+                    "wc": [
+                        "Gulf of Bothnia",
+                        "Finland",
+                        "Livonia"
+                    ]
+                }
+            }
+        }
+    },
+    "players": {
+        "Austria": {
+            "color": "cc0000",
+            "vscc": 18,
+            "iscc": 3
+        },
+        "England": {
+            "color": "0000aa",
+            "vscc": 18,
+            "iscc": 3
+        },
+        "France": {
+            "color": "9999ff",
+            "vscc": 18,
+            "iscc": 3
+        },
+        "Germany": {
+            "color": "3e3d37",
+            "vscc": 18,
+            "iscc": 3
+        },
+        "Italy": {
+            "color": "00aa00",
+            "vscc": 18,
+            "iscc": 3
+        },
+        "Russia": {
+            "color": "a800a8",
+            "vscc": 18,
+            "iscc": 4
+        },
+        "Turkey": {
+            "color": "bbbb00",
+            "vscc": 18,
+            "iscc": 3
+        }
+    }
+}
