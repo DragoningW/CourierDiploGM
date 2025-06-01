@@ -59,6 +59,8 @@ def is_admin(author: commands.Context.author) -> bool:
         169995316680982528,     # Bumble
         450636420558618625,     # Flare
         490633966974533640,     # Elle
+        1316105974406320273,    # UndefinedW
+        1140683062317949069,    # Ianic
     ]
 
 
