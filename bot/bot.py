@@ -20,8 +20,8 @@ intents.message_content = True
 intents.members = True
 bot = commands.Bot(command_prefix=os.getenv("command_prefix", default="."), intents=intents)
 logger = logging.getLogger(__name__)
-impdip_server = 1201167737163104376
-bot_status_channel = 1284336328657600572
+courier_dip_server = 1378678067412598829
+bot_status_channel = 1378680394664247316
 
 manager = Manager()
 
@@ -44,7 +44,7 @@ MESSAGES = [
 
 @bot.event
 async def on_ready():
-    guild = bot.get_guild(impdip_server)  # Ensure bot is connected to the correct server
+    guild = bot.get_guild(courier_dip_server)  # Ensure bot is connected to the correct server
     if guild:
         channel = bot.get_channel(bot_status_channel)  # Get the specific channel
         if channel:
@@ -53,10 +53,10 @@ async def on_ready():
         else:
             print(f"Channel with ID {bot_status_channel} not found.")
     else:
-        print(f"Guild with ID {impdip_server} not found.")
+        print(f"Guild with ID {courier_dip_server} not found.")
 
     # Set bot's presence (optional)
-    await bot.change_presence(activity=discord.Game(name="Impdip 🔪"))
+    await bot.change_presence(activity=discord.Game(name="CourierDip 🔪"))
 
 @bot.before_invoke
 async def before_any_command(ctx):
